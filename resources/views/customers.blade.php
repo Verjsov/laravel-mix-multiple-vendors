@@ -17,6 +17,8 @@
             </div>
         </div>
     </div>
+    <script src="{{ mix('js/customers/manifest.js') }}"></script>
+    <script src="{{ mix('js/customers/vendor.js') }}"></script>
     <script src="{{ mix('js/customers/customers.js') }}"></script>
     </body>
 </html>

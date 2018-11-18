@@ -1,6 +1,7 @@
 {
     "private": true,
     "scripts": {
+        "dev-all": "concurrently \"npm --section=backoffice run dev\" \"npm --section=customers run dev\"  --kill-others-on-fail",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "npm run development -- --watch",
@@ -18,5 +19,9 @@
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
         "vue": "^2.5.17"
+    },
+    "dependencies": {
+        "concurrently": "^4.0.1",
+        "laravel-mix-merge-manifest": "^0.1.1"
     }
 }

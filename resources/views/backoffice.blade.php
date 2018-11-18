@@ -17,6 +17,8 @@
             </div>
         </div>
     </div>
+    <script src="{{ mix('js/backoffice/manifest.js') }}"></script>
+    <script src="{{ mix('js/backoffice/vendor.js') }}"></script>
     <script src="{{ mix('js/backoffice/backoffice.js') }}"></script>
     </body>
 </html>
