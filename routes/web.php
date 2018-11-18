@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/backoffice', function () {
+    return view('backoffice');
+});
+
+Route::get('/customers', function () {
+    return view('customers');
 });
